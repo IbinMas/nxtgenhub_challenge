@@ -13,7 +13,7 @@ service:
 
 ingress:
   enabled: true
-  # host: localhost
+  host: a8f1ab5df000d463eabd95e8815f1484-418689472.us-west-2.elb.amazonaws.com
   annotations:
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/rewrite-target: /
