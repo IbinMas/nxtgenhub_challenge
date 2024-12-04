@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: docker.io/binmas/hellow-wold-webserver
+  repository: docker.io/binmas/hello-wold-webserver
   tag: "1.3"
   pullPolicy: IfNotPresent
 
@@ -11,7 +11,7 @@ service:
 
 ingress:
   enabled: true
-  host: "your-domain.com"  # Replace with your domain
+  host: "hello.elicitlabs.link"  # Replace with your domain
   annotations:
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/redirect-entry-point: websecure
