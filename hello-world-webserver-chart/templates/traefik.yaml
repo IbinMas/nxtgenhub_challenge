@@ -1,0 +1,5 @@
+# Traefik values are included as part of the Chart dependencies
+traefik:
+  enabled: true
+  service:
+    type: {{ .Values.traefik.service.type }}

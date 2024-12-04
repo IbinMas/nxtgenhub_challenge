@@ -1,0 +1,9 @@
+
+apiVersion: v2
+name: webserver
+description: A Helm chart for the Hello World Web Server
+version: 1.1.0
+dependencies:
+  - name: traefik
+    version: 21.0.0
+    repository: https://traefik.github.io/charts

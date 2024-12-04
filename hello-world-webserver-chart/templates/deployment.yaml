@@ -18,8 +18,6 @@ spec:
         - name: webserver
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-      imagePullSecrets:
-        - name: regcred
           ports:
             - containerPort: 80
           resources:
@@ -29,4 +27,5 @@ spec:
             limits:
               memory: {{ .Values.resources.limits.memory }}
               cpu: {{ .Values.resources.limits.cpu }}
-
+      imagePullSecrets:
+        - name: regcred

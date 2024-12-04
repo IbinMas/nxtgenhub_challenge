@@ -1,6 +1,0 @@
-apiVersion: v2
-name: webserver
-description: A Helm chart for a simple web server
-type: application
-version: 0.1.0
-appVersion: "1.0.0"
